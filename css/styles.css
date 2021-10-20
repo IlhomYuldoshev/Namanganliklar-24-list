@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/rubik-v14-cyrillic-regular.woff2') format('woff2'),
+        url('../fonts/rubik-v14-cyrillic-regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/rubik-v14-cyrillic-500.woff2') format('woff2'),
+        url('../fonts/rubik-v14-cyrillic-500.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/rubik-v14-cyrillic-700.woff2') format('woff2'),
+        url('../fonts/rubik-v14-cyrillic-700.woff') format('woff');
+  font-display: swap;
+}
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,7 +41,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial" , sans-serif;
+  font-family: "Rubik" ,"Arial" , sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -32,7 +56,7 @@ img {
 /* CONTAINER */
 .container {
   max-width: 100%;
-  width: 1200px;
+  width: 1300px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -42,4 +66,174 @@ img {
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+/* BUTTON STYLES */
+.btn{
+  padding: 13px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-primary{
+  background-color:#7296EC;
+  color:#fff;
+}
+
+/* SITE HEADER */
+
+.site-header {
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+/* SITE HEADER LEFT */
+.site-header-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.site-header-left {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.site-logo-link{
+  display: block;
+  padding: 13px 6px;
+  width: 276px;
+  background-color: #fff;
+  border-radius: 7px;
+  margin-right: 35px;
+}
+.site-logo-link:hover{
+  opacity: 0.8;
+}
+.site-logo-link:active{
+  opacity: 0.6;
+}
+.site-logo-img{
+  display: block;
+  width: 264px;
+  height: 19px;
+}
+.currency-block {
+  font-family: "Rubik" , Arial , sans-serif;
+}
+.currency-item {
+  font-weight: 400;
+  color: #555;
+  line-height: 19px;
+}
+.currency-item:not(:last-child){
+  margin-right: 25px;
+}
+.currency-symbol {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2959CE;
+}
+
+/* SITE HEADER RIGHT */
+.site-header-right {
+  display: flex;
+  align-items: center;
+}
+.search-form-block{
+  padding: 0;
+  margin-right: 25px;
+
+}
+.search-input{
+  width: 275px;
+  line-height: 45px;
+  border: none;
+  border-radius: 60px;
+  padding-left: 40px;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  block-size: contain;
+  background-position: top 13px left 15px;
+}
+.lng-toggle-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 3px;
+  margin: 0;
+  background-color: #DCE6FF;
+  width: 70px;
+  border-radius: 39px;
+  margin-right: 52px;
+}
+.lng-toggle-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lng-toggle-link{
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #a6a6a6;
+}
+.lng-active {
+  background-color: #fff;
+  color: #222;
+}
+/* NAVIGATION */
+.site-nav {
+  background-color:#fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.site-nav-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.site-nav-link {
+  text-decoration: none;
+  color:#7F7F7F;
+}
+
+.site-nav-link:hover{
+  color:#7296EC;
+}
+
+.site-nav-link:active{
+  opacity: 0.6;
+}
+/* ADV BLOCK */
+.adv-block {
+  background-color:#fff;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.adv-img{
+  width: 1200px;
+  height: 128px;
 }
